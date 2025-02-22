@@ -58,3 +58,10 @@ a:active{
     button:hover{
         background-color: darkblue;
     }
+    .btn{
+        width: 150px;
+        height:50px;
+    }
+    .btn:hover{
+        transform:1.2 ;
+    }
