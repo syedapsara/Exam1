@@ -50,3 +50,11 @@ a:active{
         background: #555;
         border-radius: 5px;
     }
+    button{
+        background-color: blue;
+        color: white;
+        transition: 0.3s;
+    }
+    button:hover{
+        background-color: darkblue;
+    }
