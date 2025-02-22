@@ -19,3 +19,10 @@ a:active{
         line-height: 1.6;
         text-align: justify;
     }
+    .card{
+        border: 1px solid gray;
+        padding: 20px;
+        margin: 10px;
+        max-width: 300px;
+    
+    }
