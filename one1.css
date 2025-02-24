@@ -12,7 +12,8 @@ a:active{
         margin: 20px;
     }
     h1 {
-        font-family: Arial, sans-serif;
+        font-family: Arial;
+        text-shadow: 2px 4px 4px blue;
     }
     p {
         font-size: 1.2rem;
@@ -20,35 +21,30 @@ a:active{
         text-align: justify;
     }
     .card{
-        border: 1px solid gray;
+        border:1px solid gray;
         padding: 20px;
         margin: 10px;
         max-width: 300px;
     
     }
   
-    nav {
+    nav{
         display: flex;
-        gap: 20px;
-        background: #333;
-        padding: 10px 20px;
-        border-radius: 8px;
-        justify-content: center;
+        flex-direction: column;
+        justify-content:space-evenly;
         align-items: center;
-        height: 100vh;
-        margin: 0;
-        font-family: Arial, sans-serif;
+        gap:30px;
     }
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        padding: 10px 15px;
-        transition: back-ground 0.3s ease;
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,auto);
+        gap: 10px;
     }
-    nav a:hover {
-        background: #555;
-        border-radius: 5px;
+    @media(max-width){
+        .gallery{
+            grid-template-columns: 1fr;
+        }
     }
     button{
         background-color: blue;
@@ -61,7 +57,24 @@ a:active{
     .btn{
         width: 150px;
         height:50px;
+        transition: transform 0.3s ease-in-out;
     }
     .btn:hover{
-        transform:1.2 ;
+        transform: scale(1.2) ;
     }
+        .box {
+            width: 200px;
+            height: 100px;
+            background-color: darkblue; 
+            position: relative;
+            animation: slide 2s linear infinite; 
+          }
+          @keyframes slide {
+            from {
+              left: 0; 
+            }
+            to {
+              left: 300px;
+            }
+          }
+          
